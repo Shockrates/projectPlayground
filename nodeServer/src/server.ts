@@ -8,6 +8,7 @@ import logging from './config/logging';
 import config from './config/config';
 import sampleRoutes from './routes/sample';
 import employeeRoutes from './routes/employee'
+import deviceRoutes from './routes/device'
 import mongoose from "mongoose"
 
 /**
@@ -60,6 +61,7 @@ router.use((req, res, next) => {
  */
 router.use('/sample', sampleRoutes);
 router.use('/employee', employeeRoutes);
+router.use('/device', deviceRoutes);
 
 /**
  * Error Handling

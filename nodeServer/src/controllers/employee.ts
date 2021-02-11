@@ -6,10 +6,7 @@ import mongoose from 'mongoose'
 
 const NAMESPACE = 'User Controller';
 
-const sampleHealthCheck = (req: Request, res: Response, next: NextFunction) => {
-    
 
-};
 /**
  * Returns all Employees
  * @param req 

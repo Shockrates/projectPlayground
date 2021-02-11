@@ -26,7 +26,7 @@ export class EmployeeComponent implements OnInit {
           //console.log(data);
           for(let key in data){
             console.log(key);
-            this.employees.push(new Employee( data[key].id, data[key].name, data[key].email, []))
+            this.employees.push(new Employee( data[key].id, data[key].name, data[key].email, data[key].devices))
             }
         },
         error => {
